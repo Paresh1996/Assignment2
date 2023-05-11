@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .corner {
+        background-image: url("./bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+      }
+      input {
+        width: 10rem;
+        height: 2rem;
+        padding: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+        cursor: pointer;
+      }
+      .mail {
+        display: flex;
+        flex-direction: row;
+        color: aliceblue;
+        justify-content: right;
+      }
+      #a {
+        font-size: small;
+        margin: 5px;
+        padding-top: 20px;
+        padding-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="corner">
+      <div class="mail">
+        <div id="a">Gmail</div>
+        <div id="a">Images</div>
+      </div>
+
+      <div class="header">
+        <div
+          style="
+            font-size: 70px;
+            margin-bottom: 30px;
+            color: rgb(243, 241, 239);
+          "
+        >
+          Google
+        </div>
+        <div>
+          <input
+            style="
+              border-radius: 50px;
+              width: 30rem;
+              padding: 6px;
+              margin-bottom: 15px;
+              border: 1px solid rgba(0, 0, 0, 0.212);
+            "
+            type="text"
+            placeholder="Search Google or type a URL"
+          />
+        </div>
+        <div>
+          <input type="button" value="Google Search" />
+          <input type="button" value="I'am feeling Lucky" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

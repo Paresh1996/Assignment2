@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+      body {
+        font-family: "Kanit", sans-serif;
+        background-color: aquamarine;
+        background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+      .section {
+        background-color: rgba(255, 135, 135, 0.295);
+        opacity: 1px;
+        width: 300px;
+        height: 300px;
+      }
+      .section img {
+        width: 270px;
+        height: 205px;
+        transition: transform 0.2s;
+        margin: 0 auto;
+      }
+
+      .section img :hover {
+        transform: scale(1);
+      }
+
+      .section #button {
+        border: 1px solid rgba(0, 0, 0, 0.404);
+        border-radius: 10px;
+        width: 5rem;
+        padding: 5px;
+        cursor: pointer;
+        background-color: #1f1d1cf6;
+        border: none;
+        color: rgb(253, 252, 252);
+        text-align: center;
+        font-size: 14px;
+        margin-top: 1px;
+        opacity: 0.7;
+        transition: 0.3s;
+      }
+
+      #button:hover {
+        opacity: 1;
+      }
+      h1 {
+        background-color: rgba(255, 81, 81, 0.363);
+        color: rgb(10, 10, 10);
+        text-align: center;
+        border: 1px solid rgba(158, 120, 120, 0.479);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to book store</h1>
+    <div class="container">
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1592496431122-2349e0fbc666?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1512&q=80"
+        />
+        <p>Price : 200₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80"
+        />
+        <p>Price : 300₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ym9vayUyMGNvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        />
+        <p>Price : 500₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1641154748135-8032a61a3f80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Ym9vayUyMGNvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        />
+        <p>Price : 250₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1633477189729-9290b3261d0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=722&q=80"
+        />
+        <p>Price : 250₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1612969308146-066d55f37ccb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJvb2slMjBjb3ZlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        />
+        <p>Price : 600₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1521123845560-14093637aa7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        />
+        <p>Price : 267₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1535398089889-dd807df1dfaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+        />
+        <p>Price : 877₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1535398089889-dd807df1dfaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+        />
+        <p>Price : 877₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1610882648335-ced8fc8fa6b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGJvb2slMjBjb3ZlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        />
+        <p>Price : 677₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1633580969859-ee2aa7fd2648?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGJvb2slMjBjb3ZlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        />
+        <p>Price : 175₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+
+      <div class="section">
+        <img
+          src="https://images.unsplash.com/photo-1641261689151-7f818366e684?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGJvb2slMjBjb3ZlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        />
+        <p>Price : 590₹</p>
+        <input id="button" type="button" value="Add to card" />
+      </div>
+    </div>
+  </body>
+</html>
