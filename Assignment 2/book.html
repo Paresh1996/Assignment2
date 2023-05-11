@@ -16,28 +16,30 @@
         background-size: 100% 100%;
       }
       .container {
+        background-color: rgba(217, 223, 223, 0.322);
         display: flex;
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
       }
       .section {
-        background-color: rgba(255, 135, 135, 0.295);
         opacity: 1px;
         width: 300px;
         height: 300px;
       }
+
       .section img {
         width: 270px;
         height: 205px;
         transition: transform 0.2s;
         margin: 0 auto;
+        opacity: 0.8;
+        transition: 0.3s;
       }
 
-      .section img :hover {
-        transform: scale(1);
+      .section img:hover {
+        opacity: 2;
       }
-
       .section #button {
         border: 1px solid rgba(0, 0, 0, 0.404);
         border-radius: 10px;
@@ -62,6 +64,7 @@
         color: rgb(10, 10, 10);
         text-align: center;
         border: 1px solid rgba(158, 120, 120, 0.479);
+        font-family: cursive;
       }
     </style>
   </head>
