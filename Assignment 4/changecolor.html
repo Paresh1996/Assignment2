@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chnage color</title>
+    <script src="changecolor.js"></script>
+    <style>
+      input {
+        margin-right: 10px;
+        padding: 5px;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        border: 1px rgba(255, 250, 240, 0.212) rgba(0, 0, 0, 0.26);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 60vh;
+      "
+    >
+      <p style="text-align: center">
+        The history of Java is very interesting. Java was originally designed
+        for interactive television, but it was too advanced technology for the
+        digital cable television industry at the time. The history of Java
+        starts with the Green Team. Java team members (also known as Green
+        Team), initiated this project to develop a language for digital devices
+        such as set-top boxes, televisions, etc. However, it was best suited for
+        internet programming. Later, Java technology was incorporated by
+        Netscape. The principles for creating Java programming were "Simple,
+        Robust, Portable, Platform-independent, Secured, High Performance,
+        Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and
+        Dynamic". Java was developed by James Gosling, who is known as the
+        father of Java, in 1995. James Gosling and his team members started the
+        project in the early '90s.
+      </p>
+      <br /><br />
+
+      <div style="display: flex; justify-content: center">
+        <input
+          style="background-color: Violet"
+          type="button"
+          value="Violet"
+          onclick="changecolor('Violet')"
+        />
+        <input
+          style="background-color: Indigo"
+          type="button"
+          value="Indigo"
+          onclick="changecolor('Indigo')"
+        />
+        <input
+          style="background-color: Blue"
+          type="button"
+          value="Blue"
+          onclick="changecolor('Blue')"
+        />
+        <input
+          style="background-color: green"
+          type="button"
+          value="Green"
+          onclick="changecolor('Green')"
+        />
+        <input
+          style="background-color: Yellow"
+          type="button"
+          value="Yellow"
+          onclick="changecolor('Yellow')"
+        />
+        <input
+          style="background-color: Orange"
+          type="button"
+          value="Orange"
+          onclick="changecolor('Orange')"
+        />
+        <input
+          style="background-color: Red"
+          type="button"
+          value="Red"
+          onclick="changecolor('Red')"
+        />
+        <input type="button" value="Reset" onclick="changecolor('Black')" />
+      </div>
+      <br />
+      <div style="display: flex; justify-content: center">
+        <input
+          type="button"
+          value="Increase Font"
+          onclick="applyFont('21px')"
+        />
+        <input
+          type="button"
+          value="Decrease Font"
+          onclick="applyFont('10px')"
+        />
+        <input type="button" value="Reset Font" onclick="applyFont('')" />
+      </div>
+    </div>
+  </body>
+</html>

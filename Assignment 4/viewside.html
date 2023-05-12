@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View</title>
+    <script src="viewside.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      input {
+        margin-right: 10px;
+        padding: 5px;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        border: 1px rgba(255, 250, 240, 0.212) rgba(0, 0, 0, 0.26);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <img
+        style="object-fit: cover; height: 300px"
+        id="imgid"
+        src="frontview1.jpg"
+      />
+    </div>
+    <br />
+    <div
+      style="
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <input type="button" value="Front View" onclick="changeView(1)" />
+      <input type="button" value="Top View" onclick="changeView(2)" />
+      <input type="button" value="Side View" onclick="changeView(3)" />
+      <input type="button" value="Back View" onclick="changeView(4)" />
+      <br />
+      <br />
+      <div style="display: flex; justify-content: flex-start">
+        <span onclick="thumbsup()" style="margin-right: 5px"
+          ><i class="fa fa-thumbs-up" style="font-size: 30px"></i
+        ></span>
+        <p style="margin-right: 100px" id="thumbup">0</p>
+        <span onclick="thumbsdown()" style="margin-right: 5px"
+          ><i class="fa fa-thumbs-down" style="font-size: 30px"></i
+        ></span>
+        <p id="thumbown">0</p>
+      </div>
+    </div>
+  </body>
+</html>
