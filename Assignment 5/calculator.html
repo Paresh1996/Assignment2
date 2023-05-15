@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator-body">
+      <h1>Calculator</h1>
+      <div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+          "
+        >
+          <input
+            class="inp"
+            type="text"
+            placeholder="Enter First number"
+            id="num1"
+          />
+          <input
+            class="inp"
+            type="text"
+            placeholder="Enter Second number"
+            id="num2"
+          />
+        </div>
+        <div class="btn">
+          <input
+            class="btn1"
+            type="button"
+            value="Addition"
+            onclick="calculate(1)"
+          />
+          <input
+            class="btn1"
+            style="cursor: pointer"
+            type="button"
+            value="Subtraction"
+            onclick="calculate(2)"
+          />
+          <input
+            class="btn1"
+            style="cursor: pointer"
+            type="button"
+            value="Division"
+            onclick="calculate(3)"
+          />
+          <input
+            class="btn1"
+            style="cursor: pointer"
+            type="button"
+            value="Multiplication"
+            onclick="calculate(4)"
+          />
+          <input
+            class="btn1"
+            style="cursor: pointer"
+            type="button"
+            value="Clear"
+            onclick="clr()"
+          />
+        </div>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <input class="inp" type="text" placeholder="Result" id="result" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
