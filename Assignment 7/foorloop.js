@@ -15,5 +15,3 @@ for (let item of list) {
 //ForEach loop using callback 
 console.log("ForEach loop using callback")
 list.forEach((item) => console.log(item));
-
-
